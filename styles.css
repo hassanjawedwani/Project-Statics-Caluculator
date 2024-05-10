@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root {
+    --background-color: #1B1B32;
+    --text-color: #ece8e8;
+    --text-light-color: #b1a5a5;
+    --input-color: #0A0A23;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+p,
+form {
+    margin: 20px 0 8px;
+}
+
+input[type="text"],
+button[type="submit"] {
+    background-color: var(--input-color);
+    border: 1px solid var(--text-light-color);
+    color: var(--text-color);
+    padding: 2px 4px;
+}
+
+button[type="submit"] {
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
